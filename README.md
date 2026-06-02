@@ -1,27 +1,74 @@
-# AirbnbCloneFront
+# Airbnb Clone Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+Angular 17 frontend for an Airbnb-style accommodation booking platform. Connects to the [airbnb-clone-back](https://github.com/ythalorossy/airbnb-clone-back) REST API.
 
-## Development server
+## Tech Stack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+| Component | Technology |
+|---|---|
+| Framework | Angular 17.3.5 |
+| Language | TypeScript |
+| UI Library | Angular CLI |
+| API Client | HttpClient |
+| Build | Angular CLI |
 
-## Code scaffolding
+## Project Structure
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+src/
+├── app/
+│   ├── listing/         # Listing pages and components
+│   ├── booking/         # Booking flow components
+│   ├── user/            # User/auth components
+│   └── shared/          # Shared components, services
+├── environments/        # Environment configs
+└── assets/             # Static assets
+```
 
-## Build
+## Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
+- Node.js 18+
+- Angular CLI 17
 
-## Running unit tests
+```bash
+npm install -g @angular/cli@17
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Development Server
 
-## Running end-to-end tests
+```bash
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Navigate to `http://localhost:4200/`. The app will automatically reload on file changes.
 
-## Further help
+### Build
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+ng build
+```
+
+Build artifacts are stored in `dist/`.
+
+### Run Tests
+
+```bash
+ng test
+```
+
+## Environment
+
+Environment files are in `src/environments/`:
+- `environment.ts` — development
+- `environment.prod.ts` — production
+
+**Note:** Update the API base URL to point to your backend instance.
+
+## Related Projects
+
+- [airbnb-clone-back](https://github.com/ythalorossy/airbnb-clone-back) — Spring Boot REST API backend
+
+---
+
+**YRoss** · [LinkedIn](https://www.linkedin.com/in/ythalorossy/) · [GitHub Profile](https://github.com/ythalorossy)
